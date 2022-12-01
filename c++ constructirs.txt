@@ -1,0 +1,32 @@
+	// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+class calGrade
+{
+  public:
+  char grade;
+
+  calGrade(int n1,int n2,int n3,int n4,int n5)
+  {
+   float per;
+  int tot=(n1+n2+n3+n4+n5)*100;
+  per=tot/500;
+   if(per>=90)
+       this->grade='A';
+       else if(per>=80 && per<=89)
+       grade='B';
+       else if(per>=70 && per<=79)
+       grade='C';
+       else if(per>=60 && per<=69)
+       grade='D';
+       else
+       grade='E';
+       cout<<grade;
+  }
+  
+};
+int main() {
+    calGrade d(87,70,90,100,89);
+    return 0;
+}

@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+
+class base
+{
+    int x=100;
+    protected:
+    int y=200;
+    public:
+    int z=300;
+};
+class derived:public base
+{
+    
+};
+int main()
+{
+    derived d;
+    cout<<d.z;
+}
